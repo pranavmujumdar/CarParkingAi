@@ -1,5 +1,65 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &427926696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 427926697}
+  - component: {fileID: 427926698}
+  m_Layer: 0
+  m_Name: BackRays
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &427926697
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427926696}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0.22, z: -0.63}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4870167790249810}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &427926698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427926696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SensorName: RayPerceptionSensor
+  m_DetectableTags:
+  - parking
+  - obstacle
+  - wall
+  m_RaysPerDirection: 3
+  m_MaxRayDegrees: 43.4
+  m_SphereCastRadius: 0.5
+  m_RayLength: 20
+  m_RayLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  m_ObservationStacks: 1
+  rayHitColor: {r: 1, g: 0, b: 0, a: 1}
+  rayMissColor: {r: 1, g: 1, b: 1, a: 1}
+  m_StartVerticalOffset: 0
+  m_EndVerticalOffset: 0
 --- !u!1 &1015414104
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +260,11 @@ GameObject:
   - component: {fileID: 4870167790249810}
   - component: {fileID: 2023054918}
   - component: {fileID: 2023054916}
-  - component: {fileID: 2023054915}
+  - component: {fileID: 5971305049239947714}
+  - component: {fileID: 4501144485213390931}
+  - component: {fileID: 5755898101851828274}
+  - component: {fileID: 1643239991828502910}
+  - component: {fileID: 8436034636751846740}
   m_Layer: 0
   m_Name: Car_2
   m_TagString: Untagged
@@ -227,6 +291,8 @@ Transform:
   - {fileID: 3410292460181405528}
   - {fileID: 2040931052413338447}
   - {fileID: 273120653851911017}
+  - {fileID: 4198860648039011953}
+  - {fileID: 427926697}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -259,7 +325,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.83917224, y: 0.4624412, z: 2.1707926}
   m_Center: {x: 0, y: 0.31, z: 0}
---- !u!114 &2023054915
+--- !u!114 &5971305049239947714
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -268,13 +334,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1646981259178978}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c268f8aacf359241bda98f61fac45cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b62eacc87ec6f745adc0685ab19efe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throttle: 0
-  steer: 0
-  strengthCoefficient: 20000
-  brakingTorque: 1000
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  maxStep: 5000
+  ground: {fileID: 0}
+  areaBounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  parking: {fileID: 0}
+  area: {fileID: 0}
+  parkingDetect: {fileID: 0}
+  obstacleDetect: {fileID: 0}
+  useVectorObs: 1
   throttleWheels:
   - {fileID: 6906537673824994547}
   - {fileID: 5198130680923674497}
@@ -283,18 +358,81 @@ MonoBehaviour:
   - {fileID: 4528111348764465719}
   brakingWheels:
   - {fileID: 6906537673824994547}
-  - {fileID: 430984869970926093}
   - {fileID: 5198130680923674497}
+  - {fileID: 430984869970926093}
   - {fileID: 4012408831200722227}
   wheelMeshes:
   - {fileID: 1995907943609020}
-  - {fileID: 1720468467844398}
   - {fileID: 1160819966182104}
+  - {fileID: 1720468467844398}
   - {fileID: 1664593040851034}
-  maxTurnDegree: 25
+  brakingTorque: 10
+  maxTurnDegree: 20
   handBrake: 0
-  car_rb: {fileID: 2023054918}
-  CM: {fileID: 1015414105}
+  strengthCoefficient: 20000
+--- !u!114 &4501144485213390931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646981259178978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BrainParameters:
+    vectorObservationSize: 1
+    numStackedVectorObservations: 6
+    vectorActionSize: 030000000300000002000000
+    vectorActionDescriptions: []
+    vectorActionSpaceType: 0
+  m_Model: {fileID: 0}
+  m_InferenceDevice: 0
+  m_BehaviorType: 0
+  m_BehaviorName: CarParker
+  TeamId: 0
+  m_UseChildSensors: 1
+--- !u!114 &5755898101851828274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646981259178978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 690dc8a308c99e14cbb5eaa3fc7b7edc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 5971305049239947714}
+--- !u!114 &1643239991828502910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646981259178978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58af90635a023984a803c95858bc6bad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 5971305049239947714}
+--- !u!114 &8436034636751846740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646981259178978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54e58c9c0f9e004e9c5ae9fe0c2548d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 5971305049239947714}
 --- !u!1 &1664593040851034
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,7 +867,7 @@ GameObject:
   - component: {fileID: 2040931052413338447}
   - component: {fileID: 4211818452919094400}
   m_Layer: 0
-  m_Name: Lighting
+  m_Name: LH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -762,7 +900,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.96312267, b: 0.7028302, a: 1}
   m_Intensity: 5
-  m_Range: 22.66
+  m_Range: 40
   m_SpotAngle: 51.6
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -810,6 +948,66 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &5834999254392156629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4198860648039011953}
+  - component: {fileID: 2072988007216450502}
+  m_Layer: 0
+  m_Name: FrontRays
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4198860648039011953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834999254392156629}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.22000001, z: 0.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4870167790249810}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2072988007216450502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834999254392156629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SensorName: RayPerceptionSensor
+  m_DetectableTags:
+  - parking
+  - obstacle
+  - wall
+  m_RaysPerDirection: 3
+  m_MaxRayDegrees: 43.4
+  m_SphereCastRadius: 0.5
+  m_RayLength: 20
+  m_RayLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  m_ObservationStacks: 1
+  rayHitColor: {r: 1, g: 0, b: 0, a: 1}
+  rayMissColor: {r: 1, g: 1, b: 1, a: 1}
+  m_StartVerticalOffset: 0
+  m_EndVerticalOffset: 0
 --- !u!1 &7015461422931463617
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,7 +1019,7 @@ GameObject:
   - component: {fileID: 273120653851911017}
   - component: {fileID: 2281169686771279567}
   m_Layer: 0
-  m_Name: Lighting (1)
+  m_Name: RH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
