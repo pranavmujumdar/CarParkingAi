@@ -106,6 +106,24 @@ public class CarAgent : Agent
 
     public void MoveAgent(float[] act)
     {
+        var steer = act[0];
+        var throttle = act[1];
+
+        foreach (WheelCollider wheel in throttleWheels)
+        {
+            wheel.motorTorque = strengthCoefficient * Time.fixedDeltaTime * throttle;
+        }
+        foreach (GameObject wheel in steeringWheels)
+        {
+            wheel.GetComponent<WheelCollider>().steerAngle = maxTurnDegree * steer;
+            wheel.transform.localEulerAngles = new Vector3(0f, steer * maxTurnDegree, 0f);
+        }
+    }
+
+    //Move agent for discrete actions
+    /*
+     public void MoveAgent(float[] act)
+    {
         
         //act array of floats has forward/backward in position 0, turning in position 1, handbrake in position 2
         var throttle= act[0];
@@ -165,9 +183,9 @@ public class CarAgent : Agent
             {
                 wheel.brakeTorque = brakingTorque * 0;
             }
-        }*/
+        }
     }
-
+*/
     private void FixedUpdate()
     {
         //visual turning of the wheels
@@ -192,7 +210,13 @@ public class CarAgent : Agent
 
     public override float[] Heuristic()
     {
-        var action = new float[3];
+        var action = new float[2];
+        action[0] = Input.GetAxis("Horizontal");
+        action[1] = Input.GetAxis("Vertical");
+        //return action;
+
+
+        /*var action = new float[3];
 
         // left right
         if (Input.GetKeyDown(KeyCode.D))
@@ -219,16 +243,16 @@ public class CarAgent : Agent
         if (Input.GetKey(KeyCode.S))
         {
             action[0] = 2f;
-        }
-        // handbrake pressed or released
-       /* if (Input.GetKeyDown(KeyCode.Space))
-        {
-            action[2] = 1f;
-        }
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            action[2] = 2f;
         }*/
+        // handbrake pressed or released
+        /* if (Input.GetKeyDown(KeyCode.Space))
+         {
+             action[2] = 1f;
+         }
+         if (Input.GetKeyUp(KeyCode.Space))
+         {
+             action[2] = 2f;
+         }*/
         return action;
     }
     
