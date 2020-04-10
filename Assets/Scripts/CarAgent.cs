@@ -18,7 +18,8 @@ public class CarAgent : Agent
 
     public GameObject area;
 
-    
+    [HideInInspector]
+    public ParkingArea areaSettings;
 
     /// <summary>
     /// Detects when the block touches the outside
@@ -54,6 +55,7 @@ public class CarAgent : Agent
     void Awake()
     {
         carSetting = FindObjectOfType<CarSetting>();
+        areaSettings = FindObjectOfType<ParkingArea>();
     }
 
     public override void Initialize()
@@ -266,7 +268,9 @@ public class CarAgent : Agent
         var rotationAngle = rotation * 90f;
         area.transform.Rotate(new Vector3(0f, rotationAngle, 0f));
 
-        
+        areaSettings.resetArea();
+
+
         transform.position = GetRandomSpawnPos();
 
         m_CarRb.velocity = Vector3.zero;

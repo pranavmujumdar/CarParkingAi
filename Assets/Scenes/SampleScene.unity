@@ -2292,33 +2292,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1012916895001643167}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2023054919 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 1012916895001643167}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2023054914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b62eacc87ec6f745adc0685ab19efe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2023054923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2023054914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
-  offsetStep: 0
 --- !u!1001 &2145034708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2524,36 +2497,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area
       objectReference: {fileID: 0}
-    - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: BackSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353930994531830247, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: FrontSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784389294959975263, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 2023054919}
-    - target: {fileID: 3493066541810076274, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_BrainParameters.numStackedVectorObservations
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751179268556796435, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 2023054919}
-    - target: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: maxStep
-      value: 5000
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1012916894743354466, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}

@@ -12,18 +12,18 @@ public class ParkingArea : MonoBehaviour
 
     //Spawn the cars and parking spots
     public List<GameObject> parkedCarSpawnAreas;
-
+    /*
     private void Start()
     {
         randomSpawnCarsAndParking();
     }
-
+    */
     public void randomSpawnCarsAndParking()
     {
         foreach(GameObject g in parkedCarSpawnAreas)
         {
             float i = Random.Range(0f, 1f);
-            if (i <= 0.8f)
+            if (i <= 0.9f)
             {
                 placeObject(parkedCars[Mathf.FloorToInt(Random.Range(0,parkedCars.Count))],g);
             }
@@ -45,13 +45,15 @@ public class ParkingArea : MonoBehaviour
         Transform[] allChildren = GetComponentsInChildren<Transform>(true);
         foreach (Transform child in allChildren)
         {
-            Debug.Log(child.tag);
+            //Debug.Log(child.tag);
             if (child.CompareTag("obstacle") || child.CompareTag("parking"))
             {
                 Destroy(child.gameObject);
             }
         }
     }
+
+    /*
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -61,5 +63,10 @@ public class ParkingArea : MonoBehaviour
 //            randomSpawnCarsAndParking();
         }
     }
-
+    */
+    public void resetArea()
+    {
+        clearParking();
+        randomSpawnCarsAndParking();
+    }
 }
