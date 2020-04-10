@@ -5,7 +5,7 @@ using MLAgents;
 
 public class CarAgent : Agent
 {
-    public GameObject ground;
+    public List<GameObject> agentSpawnPositions;
 
     [HideInInspector]
     public Bounds areaBounds;
@@ -51,23 +51,25 @@ public class CarAgent : Agent
 
     public float strengthCoefficient = 20000f;
 
-
+    private GameObject ground;
     void Awake()
     {
         carSetting = FindObjectOfType<CarSetting>();
-        areaSettings = FindObjectOfType<ParkingArea>();
+        areaSettings = area.GetComponent<ParkingArea>();
     }
 
     public override void Initialize()
     {
         m_CarRb = GetComponent<Rigidbody>();
 
-        areaBounds = ground.GetComponent<Collider>().bounds;
-
+        GetRandomSpawnPos();
         //SetResetParameters();
     }
     public Vector3 GetRandomSpawnPos()
     {
+        ground = agentSpawnPositions[Mathf.FloorToInt(Random.Range(0, agentSpawnPositions.Count))];
+
+        areaBounds = ground.GetComponent<Collider>().bounds;
         var foundNewSpawnLocation = false;
         var randomSpawnPos = Vector3.zero;
         while (foundNewSpawnLocation == false)

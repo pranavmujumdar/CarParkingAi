@@ -188,77 +188,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: BackSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353930994531830247, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: FrontSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784389294959975263, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 102570623}
-    - target: {fileID: 3493066541810076274, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_BrainParameters.numStackedVectorObservations
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751179268556796435, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 102570623}
-    - target: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: maxStep
-      value: 5000
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1012916894743354466, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
---- !u!1 &102570622 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1011976652518437315, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 102570621}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &102570623 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 102570621}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102570622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b62eacc87ec6f745adc0685ab19efe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &102570624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102570622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
-  offsetStep: 0
 --- !u!1001 &304813016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -326,77 +257,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: BackSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353930994531830247, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: FrontSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784389294959975263, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 304813018}
-    - target: {fileID: 3493066541810076274, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_BrainParameters.numStackedVectorObservations
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751179268556796435, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 304813018}
-    - target: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: maxStep
-      value: 5000
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1012916894743354466, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
---- !u!1 &304813017 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1011976652518437315, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 304813016}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &304813018 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 304813016}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304813017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b62eacc87ec6f745adc0685ab19efe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &304813019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304813017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
-  offsetStep: 0
 --- !u!1001 &384664273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -464,77 +326,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (9)
       objectReference: {fileID: 0}
-    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: BackSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353930994531830247, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: FrontSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784389294959975263, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 384664275}
-    - target: {fileID: 3493066541810076274, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_BrainParameters.numStackedVectorObservations
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751179268556796435, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 384664275}
-    - target: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: maxStep
-      value: 5000
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1012916894743354466, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
---- !u!1 &384664274 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1011976652518437315, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 384664273}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &384664275 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 384664273}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 384664274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b62eacc87ec6f745adc0685ab19efe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &384664276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 384664274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
-  offsetStep: 0
 --- !u!1 &441372641
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,7 +357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f936ced65061a46baff7469563bbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnAreaMarginMultiplier: 0.5
+  spawnAreaMarginMultiplier: 0.99
 --- !u!4 &441372643
 Transform:
   m_ObjectHideFlags: 0
@@ -646,77 +439,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: BackSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353930994531830247, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: FrontSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784389294959975263, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 579697260}
-    - target: {fileID: 3493066541810076274, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_BrainParameters.numStackedVectorObservations
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751179268556796435, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 579697260}
-    - target: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: maxStep
-      value: 5000
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1012916894743354466, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
---- !u!1 &579697259 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1011976652518437315, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 579697258}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &579697260 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 579697258}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579697259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b62eacc87ec6f745adc0685ab19efe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &579697261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579697259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
-  offsetStep: 0
 --- !u!1001 &616823692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -784,77 +508,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: BackSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353930994531830247, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: FrontSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784389294959975263, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 616823694}
-    - target: {fileID: 3493066541810076274, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_BrainParameters.numStackedVectorObservations
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751179268556796435, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 616823694}
-    - target: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: maxStep
-      value: 5000
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1012916894743354466, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
---- !u!1 &616823693 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1011976652518437315, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 616823692}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &616823694 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 616823692}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 616823693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b62eacc87ec6f745adc0685ab19efe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &616823695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 616823693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
-  offsetStep: 0
 --- !u!1001 &672414039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -922,77 +577,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (13)
       objectReference: {fileID: 0}
-    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: BackSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353930994531830247, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: FrontSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784389294959975263, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 672414041}
-    - target: {fileID: 3493066541810076274, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_BrainParameters.numStackedVectorObservations
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751179268556796435, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 672414041}
-    - target: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: maxStep
-      value: 5000
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1012916894743354466, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
---- !u!1 &672414040 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1011976652518437315, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 672414039}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &672414041 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 672414039}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672414040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b62eacc87ec6f745adc0685ab19efe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &672414042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672414040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
-  offsetStep: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,77 +738,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (11)
       objectReference: {fileID: 0}
-    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: BackSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353930994531830247, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: FrontSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784389294959975263, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 849983151}
-    - target: {fileID: 3493066541810076274, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_BrainParameters.numStackedVectorObservations
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751179268556796435, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 849983151}
-    - target: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: maxStep
-      value: 5000
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1012916894743354466, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
---- !u!1 &849983150 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1011976652518437315, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 849983149}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &849983151 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 849983149}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 849983150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b62eacc87ec6f745adc0685ab19efe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &849983152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 849983150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
-  offsetStep: 0
 --- !u!1001 &936803260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1290,77 +807,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (7)
       objectReference: {fileID: 0}
-    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: BackSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353930994531830247, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: FrontSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784389294959975263, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 936803262}
-    - target: {fileID: 3493066541810076274, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_BrainParameters.numStackedVectorObservations
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751179268556796435, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 936803262}
-    - target: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: maxStep
-      value: 5000
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1012916894743354466, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
---- !u!1 &936803261 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1011976652518437315, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 936803260}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &936803262 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 936803260}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 936803261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b62eacc87ec6f745adc0685ab19efe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &936803263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 936803261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
-  offsetStep: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1525,77 +973,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (15)
       objectReference: {fileID: 0}
-    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: BackSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353930994531830247, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: FrontSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784389294959975263, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 1028237158}
-    - target: {fileID: 3493066541810076274, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_BrainParameters.numStackedVectorObservations
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751179268556796435, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 1028237158}
-    - target: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: maxStep
-      value: 5000
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1012916894743354466, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
---- !u!1 &1028237157 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1011976652518437315, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 1028237156}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1028237158 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 1028237156}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1028237157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b62eacc87ec6f745adc0685ab19efe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1028237159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1028237157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
-  offsetStep: 0
 --- !u!1001 &1255006272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1663,77 +1042,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (10)
       objectReference: {fileID: 0}
-    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: BackSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353930994531830247, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: FrontSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784389294959975263, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 1255006274}
-    - target: {fileID: 3493066541810076274, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_BrainParameters.numStackedVectorObservations
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751179268556796435, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 1255006274}
-    - target: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: maxStep
-      value: 5000
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1012916894743354466, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
---- !u!1 &1255006273 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1011976652518437315, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 1255006272}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1255006274 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 1255006272}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255006273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b62eacc87ec6f745adc0685ab19efe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1255006275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255006273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
-  offsetStep: 0
 --- !u!1001 &1308492713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1801,77 +1111,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: BackSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353930994531830247, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: FrontSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784389294959975263, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 1308492715}
-    - target: {fileID: 3493066541810076274, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_BrainParameters.numStackedVectorObservations
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751179268556796435, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 1308492715}
-    - target: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: maxStep
-      value: 5000
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1012916894743354466, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
---- !u!1 &1308492714 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1011976652518437315, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 1308492713}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1308492715 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 1308492713}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308492714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b62eacc87ec6f745adc0685ab19efe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1308492716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308492714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
-  offsetStep: 0
 --- !u!1001 &1544535515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1939,77 +1180,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (14)
       objectReference: {fileID: 0}
-    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: BackSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353930994531830247, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: FrontSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784389294959975263, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 1544535517}
-    - target: {fileID: 3493066541810076274, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_BrainParameters.numStackedVectorObservations
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751179268556796435, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 1544535517}
-    - target: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: maxStep
-      value: 5000
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1012916894743354466, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
---- !u!1 &1544535516 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1011976652518437315, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 1544535515}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1544535517 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 1544535515}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1544535516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b62eacc87ec6f745adc0685ab19efe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1544535518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1544535516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
-  offsetStep: 0
 --- !u!1001 &1562802123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2077,77 +1249,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (12)
       objectReference: {fileID: 0}
-    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: BackSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353930994531830247, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: FrontSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784389294959975263, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 1562802125}
-    - target: {fileID: 3493066541810076274, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_BrainParameters.numStackedVectorObservations
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751179268556796435, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 1562802125}
-    - target: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: maxStep
-      value: 5000
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1012916894743354466, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
---- !u!1 &1562802124 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1011976652518437315, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 1562802123}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1562802125 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 1562802123}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562802124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b62eacc87ec6f745adc0685ab19efe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1562802126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562802124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
-  offsetStep: 0
 --- !u!1001 &1617442810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2215,77 +1318,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: BackSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353930994531830247, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: FrontSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784389294959975263, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 1617442812}
-    - target: {fileID: 3493066541810076274, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_BrainParameters.numStackedVectorObservations
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751179268556796435, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 1617442812}
-    - target: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: maxStep
-      value: 5000
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1012916894743354466, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
---- !u!1 &1617442811 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1011976652518437315, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 1617442810}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1617442812 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 1617442810}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1617442811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b62eacc87ec6f745adc0685ab19efe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1617442813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1617442811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
-  offsetStep: 0
 --- !u!1 &2023054914 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1011976652518437315, guid: 666be1b04fd520d4786c75ebb505f831,
@@ -2359,77 +1393,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: BackSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353930994531830247, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_SensorName
-      value: FrontSensors
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784389294959975263, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 2145034710}
-    - target: {fileID: 3493066541810076274, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: m_BrainParameters.numStackedVectorObservations
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751179268556796435, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 2145034710}
-    - target: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-        type: 3}
-      propertyPath: maxStep
-      value: 5000
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1012916894743354466, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}
---- !u!1 &2145034709 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1011976652518437315, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 2145034708}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2145034710 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6688070584465591267, guid: 666be1b04fd520d4786c75ebb505f831,
-    type: 3}
-  m_PrefabInstance: {fileID: 2145034708}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145034709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b62eacc87ec6f745adc0685ab19efe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2145034711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145034709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
-  offsetStep: 0
 --- !u!1001 &1012916895001643167
 PrefabInstance:
   m_ObjectHideFlags: 0
