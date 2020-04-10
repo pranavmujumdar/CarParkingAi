@@ -188,6 +188,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
         type: 3}
       propertyPath: m_SensorName
@@ -321,6 +326,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
         type: 3}
       propertyPath: m_SensorName
@@ -453,6 +463,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Area (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
         type: 3}
@@ -631,6 +646,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
         type: 3}
       propertyPath: m_SensorName
@@ -764,6 +784,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
         type: 3}
       propertyPath: m_SensorName
@@ -896,6 +921,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Area (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
         type: 3}
@@ -1122,6 +1152,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
         type: 3}
       propertyPath: m_SensorName
@@ -1254,6 +1289,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Area (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
         type: 3}
@@ -1485,6 +1525,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
         type: 3}
       propertyPath: m_SensorName
@@ -1617,6 +1662,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Area (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
         type: 3}
@@ -1751,6 +1801,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
         type: 3}
       propertyPath: m_SensorName
@@ -1883,6 +1938,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Area (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
         type: 3}
@@ -2017,6 +2077,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
         type: 3}
       propertyPath: m_SensorName
@@ -2149,6 +2214,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Area (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
         type: 3}
@@ -2315,6 +2385,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Area (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012916896229951318, guid: 666be1b04fd520d4786c75ebb505f831,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1012916896372074123, guid: 666be1b04fd520d4786c75ebb505f831,
         type: 3}
