@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f936ced65061a46baff7469563bbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnAreaMarginMultiplier: 0.99
+  spawnAreaMarginMultiplier: 0.5
 --- !u!4 &441372643
 Transform:
   m_ObjectHideFlags: 0
@@ -1541,6 +1541,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1382583378842520022, guid: 666be1b04fd520d4786c75ebb505f831,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4199546065581374997, guid: 666be1b04fd520d4786c75ebb505f831,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6036595769359245561, guid: 666be1b04fd520d4786c75ebb505f831,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666be1b04fd520d4786c75ebb505f831, type: 3}

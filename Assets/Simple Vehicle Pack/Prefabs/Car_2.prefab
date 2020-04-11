@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 427926697}
   - component: {fileID: 427926698}
+  - component: {fileID: 494799188440976973}
   m_Layer: 0
   m_Name: BackRays
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427926696}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.22, z: -0.63}
+  m_LocalPosition: {x: 0, y: 0.31, z: -0.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4870167790249810}
@@ -43,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SensorName: RayPerceptionSensor
+  m_SensorName: BackSensor1
   m_DetectableTags:
   - parking
   - obstacle
@@ -60,6 +61,35 @@ MonoBehaviour:
   rayMissColor: {r: 1, g: 1, b: 1, a: 1}
   m_StartVerticalOffset: 0
   m_EndVerticalOffset: 0
+--- !u!114 &494799188440976973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427926696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SensorName: BackSensor2
+  m_DetectableTags:
+  - parking
+  - obstacle
+  - wall
+  m_RaysPerDirection: 3
+  m_MaxRayDegrees: 43.4
+  m_SphereCastRadius: 0.5
+  m_RayLength: 20
+  m_RayLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  m_ObservationStacks: 1
+  rayHitColor: {r: 1, g: 0, b: 0, a: 1}
+  rayMissColor: {r: 1, g: 1, b: 1, a: 1}
+  m_StartVerticalOffset: 0
+  m_EndVerticalOffset: 1.5
 --- !u!1 &1015414104
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,13 +370,14 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  maxStep: 5000
-  ground: {fileID: 0}
+  maxStep: 10000
+  agentSpawnPositions: []
   areaBounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   parking: {fileID: 0}
   area: {fileID: 0}
+  areaSettings: {fileID: 0}
   parkingDetect: {fileID: 0}
   obstacleDetect: {fileID: 0}
   useVectorObs: 1
@@ -958,6 +989,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4198860648039011953}
   - component: {fileID: 2072988007216450502}
+  - component: {fileID: 2760412740068319156}
   m_Layer: 0
   m_Name: FrontRays
   m_TagString: Untagged
@@ -973,7 +1005,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5834999254392156629}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.22000001, z: 0.35}
+  m_LocalPosition: {x: 0, y: 0.31, z: 0.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4870167790249810}
@@ -991,7 +1023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SensorName: RayPerceptionSensor
+  m_SensorName: FrontSensor1
   m_DetectableTags:
   - parking
   - obstacle
@@ -1008,6 +1040,35 @@ MonoBehaviour:
   rayMissColor: {r: 1, g: 1, b: 1, a: 1}
   m_StartVerticalOffset: 0
   m_EndVerticalOffset: 0
+--- !u!114 &2760412740068319156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834999254392156629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SensorName: FronSensor2
+  m_DetectableTags:
+  - parking
+  - obstacle
+  - wall
+  m_RaysPerDirection: 3
+  m_MaxRayDegrees: 43.4
+  m_SphereCastRadius: 0.5
+  m_RayLength: 20
+  m_RayLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  m_ObservationStacks: 1
+  rayHitColor: {r: 1, g: 0, b: 0, a: 1}
+  rayMissColor: {r: 1, g: 1, b: 1, a: 1}
+  m_StartVerticalOffset: 0
+  m_EndVerticalOffset: 1.5
 --- !u!1 &7015461422931463617
 GameObject:
   m_ObjectHideFlags: 0

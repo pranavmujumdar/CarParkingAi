@@ -92,7 +92,7 @@ public class CarAgent : Agent
     public void hitACar()
     {
         // punish the agent
-        AddReward(-0.5f);
+        AddReward(-0.1f);
         //EndEpisode();
     }
     public void hitAWall()
@@ -104,7 +104,7 @@ public class CarAgent : Agent
     public void parked()
     {
         // reward the agent
-        AddReward(1f);
+        AddReward(5f);
         EndEpisode();
     }
 
