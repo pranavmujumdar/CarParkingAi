@@ -295,6 +295,7 @@ GameObject:
   - component: {fileID: 5755898101851828274}
   - component: {fileID: 1643239991828502910}
   - component: {fileID: 8436034636751846740}
+  - component: {fileID: 1926808762749974744}
   m_Layer: 0
   m_Name: Car_2
   m_TagString: Untagged
@@ -378,8 +379,6 @@ MonoBehaviour:
   parking: {fileID: 0}
   area: {fileID: 0}
   areaSettings: {fileID: 0}
-  parkingDetect: {fileID: 0}
-  obstacleDetect: {fileID: 0}
   useVectorObs: 1
   throttleWheels:
   - {fileID: 6906537673824994547}
@@ -387,19 +386,12 @@ MonoBehaviour:
   steeringWheels:
   - {fileID: 3948851888827012491}
   - {fileID: 4528111348764465719}
-  brakingWheels:
-  - {fileID: 6906537673824994547}
-  - {fileID: 5198130680923674497}
-  - {fileID: 430984869970926093}
-  - {fileID: 4012408831200722227}
   wheelMeshes:
   - {fileID: 1995907943609020}
   - {fileID: 1160819966182104}
   - {fileID: 1720468467844398}
   - {fileID: 1664593040851034}
-  brakingTorque: 10
   maxTurnDegree: 20
-  handBrake: 0
   strengthCoefficient: 20000
 --- !u!114 &4501144485213390931
 MonoBehaviour:
@@ -419,7 +411,7 @@ MonoBehaviour:
     vectorActionSize: 02000000
     vectorActionDescriptions: []
     vectorActionSpaceType: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 50bf7952cca8c03429d613c2a4fc1990, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: CarParker
@@ -464,6 +456,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 5971305049239947714}
+--- !u!114 &1926808762749974744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646981259178978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecisionPeriod: 5
+  TakeActionsBetweenDecisions: 1
+  offsetStep: 0
 --- !u!1 &1664593040851034
 GameObject:
   m_ObjectHideFlags: 0

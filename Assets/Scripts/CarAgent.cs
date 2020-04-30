@@ -5,6 +5,9 @@ using MLAgents;
 
 public class CarAgent : Agent
 {
+    /// <summary>
+    /// List of spawning areas where the agent can spawn
+    /// </summary>
     public List<GameObject> agentSpawnPositions;
 
     [HideInInspector]
@@ -12,29 +15,21 @@ public class CarAgent : Agent
 
 
     /// <summary>
-    /// The goal to push the block to.
+    /// The parking 
     /// </summary>
     public GameObject parking;
-
+    /// <summary>
+    /// reference to the Parking lot area
+    /// </summary>
     public GameObject area;
 
     [HideInInspector]
     public ParkingArea areaSettings;
 
-    /// <summary>
-    /// Detects when the block touches the outside
-    /// </summary>
-    [HideInInspector]
-    public ParkingDetect parkingDetect;
-
-    /// <summary>
-    /// Detects when the block touches the outside
-    /// </summary>
-    [HideInInspector]
-    public ObstacleDetect obstacleDetect;
-
+    
     public bool useVectorObs;
-
+    
+    //reference to carSetting object
     CarSetting carSetting;
 
     Rigidbody m_CarRb;  //cached on initialization
@@ -42,22 +37,27 @@ public class CarAgent : Agent
     //list of wheels and meshes
     public List<WheelCollider> throttleWheels;
     public List<GameObject> steeringWheels;
-    public List<WheelCollider> brakingWheels;
     public List<GameObject> wheelMeshes;
 
-    public float brakingTorque = 10f;
     public float maxTurnDegree = 20f;
-    public float handBrake;
+    
 
+    //force applied to the driving wheels
     public float strengthCoefficient = 20000f;
 
     private GameObject ground;
+    /// <summary>
+    /// get the variables from external scripts on awake
+    /// </summary>
     void Awake()
     {
         carSetting = FindObjectOfType<CarSetting>();
         areaSettings = area.GetComponent<ParkingArea>();
     }
 
+    /// <summary>
+    /// Initialize to get hte rigid body and a randomswpawn position
+    /// </summary>
     public override void Initialize()
     {
         m_CarRb = GetComponent<Rigidbody>();
@@ -65,6 +65,10 @@ public class CarAgent : Agent
         GetRandomSpawnPos();
         //SetResetParameters();
     }
+    /// <summary>
+    /// Get a random Spawn position for the agent car depending upon the spawn area margin multiplier
+    /// </summary>
+    /// <returns> a vector3 position</returns>
     public Vector3 GetRandomSpawnPos()
     {
         ground = agentSpawnPositions[Mathf.FloorToInt(Random.Range(0, agentSpawnPositions.Count))];
@@ -88,26 +92,42 @@ public class CarAgent : Agent
         return randomSpawnPos;
     }
 
-
+    /// <summary>
+    /// Punishing the agent for hitting another parked car
+    /// </summary>
     public void hitACar()
     {
+        Debug.Log("Hit Car");
         // punish the agent
         AddReward(-0.1f);
         //EndEpisode();
     }
+    /// <summary>
+    /// Punish the agent for hitting a wall
+    /// </summary>
     public void hitAWall()
     {
         // punish the agent
+        Debug.Log("Hit wall");
         AddReward(-0.1f);
     }
 
+    /// <summary>
+    /// Reward the agent on parking properly
+    /// </summary>
     public void parked()
     {
         // reward the agent
+        Debug.Log("Parked");
         AddReward(5f);
         EndEpisode();
     }
 
+    /// <summary>
+    /// MoveAgent function for continuous actions where we get values in a float called act, the first value belongs to steering
+    /// and the second value belongs to the throttle
+    /// </summary>
+    /// <param name="act"></param>
     public void MoveAgent(float[] act)
     {
         var steer = act[0];
@@ -197,6 +217,7 @@ public class CarAgent : Agent
         {
             mesh.transform.Rotate(m_CarRb.velocity.magnitude * (transform.InverseTransformDirection(m_CarRb.velocity).z >= 0 ? 1 : -1) / (2 * Mathf.PI * 0.17f), 0f, 0f);
         }
+        
     }
 
     /// <summary>
@@ -206,19 +227,20 @@ public class CarAgent : Agent
     {
         // Move the agent using the action.
         MoveAgent(vectorAction);
-
         // Penalty given each step to encourage agent to finish task quickly.
         AddReward(-1f / maxStep);
     }
 
-
+    /// <summary>
+    /// Heuristic function for the user to be able to drive the car himself
+    /// </summary>
+    /// <returns></returns>
     public override float[] Heuristic()
     {
         var action = new float[2];
         action[0] = Input.GetAxis("Horizontal");
         action[1] = Input.GetAxis("Vertical");
         //return action;
-
 
         /*var action = new float[3];
 
@@ -261,7 +283,7 @@ public class CarAgent : Agent
     }
     
     /// <summary>
-    /// In the editor, if "Reset On Done" is checked then AgentReset() will be
+    /// In the editor, if "OnEpisodeBegin" is checked then AgentReset() will be
     /// called automatically anytime we mark done = true in an agent script.
     /// </summary>
     public override void OnEpisodeBegin()
@@ -274,6 +296,7 @@ public class CarAgent : Agent
 
 
         transform.position = GetRandomSpawnPos();
+        transform.Rotate(new Vector3(0f, 0f, 0f));
 
         m_CarRb.velocity = Vector3.zero;
         

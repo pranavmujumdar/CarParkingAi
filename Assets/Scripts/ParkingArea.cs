@@ -22,15 +22,15 @@ public class ParkingArea : MonoBehaviour
     {
         foreach(GameObject g in parkedCarSpawnAreas)
         {
-            //float i = Random.Range(0f, 1f);
-            //if (i <= 0.95f)
+            float i = Random.Range(0f, 1f);
+            if (i <= 0.85f)
             {
                 placeObject(parkedCars[Mathf.FloorToInt(Random.Range(0,parkedCars.Count))],g);
             }
-            //else
-            /*{
+            else
+            {
                 placeObject(parkingSpot, g);
-            }*/
+            }
         }
     }
 
@@ -46,7 +46,7 @@ public class ParkingArea : MonoBehaviour
         foreach (Transform child in allChildren)
         {
             //Debug.Log(child.tag);
-            if (child.CompareTag("obstacle")) //child.CompareTag("parking")
+            if (child.CompareTag("obstacle") || child.CompareTag("parking")) //child.CompareTag("parking")
             {
                 Destroy(child.gameObject);
             }

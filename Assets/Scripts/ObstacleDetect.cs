@@ -11,6 +11,14 @@ public class ObstacleDetect : MonoBehaviour
     /// </summary>
     public CarAgent agent;  //
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("obstacle"))
+        {
+            agent.hitACar();
+        }
+    }
+    /*
     private void OnTriggerEnter(Collider col)
     {
         // Touched goal.
@@ -18,5 +26,5 @@ public class ObstacleDetect : MonoBehaviour
         {
             agent.hitACar();
         }
-    }
+    }*/
 }

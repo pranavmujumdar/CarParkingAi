@@ -11,6 +11,14 @@ public class wallDetect : MonoBehaviour
     /// </summary>
     public CarAgent agent;  //
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("wall"))
+        {
+            agent.hitAWall();
+        }
+    }
+    /*
     private void OnTriggerEnter(Collider col)
     {
         // Touched goal.
@@ -18,5 +26,5 @@ public class wallDetect : MonoBehaviour
         {
             agent.hitAWall();
         }
-    }
+    }*/
 }
