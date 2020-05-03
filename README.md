@@ -3,6 +3,7 @@ This is a Unity Project I'm working on to create an AI that will park the car by
 
 Inference of the Training
 ![Gif](https://media.giphy.com/media/ThuZCwh7Va9rBUW82O/giphy.gif)
+![Gif](https://media.giphy.com/media/ThuZCwh7Va9rBUW82O/giphy.gif)
 
 ## Specifications
 1. Currently the AI is able to find the parking spot and drive to it, the episode resets as soon as the AI collides with the parking spot
