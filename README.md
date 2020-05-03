@@ -2,7 +2,7 @@
 This is a Unity Project I'm working on to create an AI that will park the car by detecting an empty space
 
 Inference of the Training
-![THE](https://media.giphy.com/media/ThuZCwh7Va9rBUW82O/giphy.gif)
+[Link to the You tube video](https://youtu.be/0G5L-2T0a5s)
 
 ## Specifications
 1. Currently the AI is able to find the parking spot and drive to it, the episode resets as soon as the AI collides with the parking spot
