@@ -8,7 +8,8 @@ A self parking Ai created and simulated using Unity and Unity MLAgent, the goal 
 ![Car parking Ai](https://media.giphy.com/media/VMUfpP35tpAt9xZWUR/giphy.gif)
 
 
-## Installation and setup Instructions inside the "ProjectReportAndPresentation" > ParkingAssistAI.pdf
+## Installation and setup
+Instructions inside the "ProjectReportAndPresentation" > ParkingAssistAI.pdf
 
 ## Specifications
 1. Currently the AI is able to find the parking spot and drive to it, the episode resets as soon as the AI collides with the parking spot
