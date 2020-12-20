@@ -1,7 +1,8 @@
 # CarParkingAi
 This is a Unity Project I'm working on to create an AI that will park the car by detecting an empty space
 
-Important Links
+![Car parking Ai](https://media.giphy.com/media/VMUfpP35tpAt9xZWUR/giphy.gif)
+
 Portfolio
 [Link to the Portfolio](https://pranavmujumdar.com/projects/parking-simulator-unity)
 
