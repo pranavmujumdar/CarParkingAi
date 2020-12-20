@@ -1,12 +1,12 @@
 # CarParkingAi
-This is a Unity Project I'm working on to create an AI that will park the car by detecting an empty space
+A self parking Ai created and simulated using Unity and Unity MLAgent, the goal for the agent is to find the parking spot and park the car, avoiding crashing into humans walking by and other parked cars
 
-![Car parking Ai](https://media.giphy.com/media/VMUfpP35tpAt9xZWUR/giphy.gif)
-
-Portfolio
 [Link to the Portfolio](https://pranavmujumdar.com/projects/parking-simulator-unity)
 
 [Link to a brief overview video](https://northeastern.zoom.us/rec/share/jk_2eJj4yNoxpFcURpUijPZ-d1ygxIiiTjTGfeo7X4fL9mkMTVdAAjtKXLqp8c20.W3skka1QrKzvKwUZ?startTime=1608426409000)
+
+![Car parking Ai](https://media.giphy.com/media/VMUfpP35tpAt9xZWUR/giphy.gif)
+
 
 ## Installation and setup Instructions inside the "ProjectReportAndPresentation" > ParkingAssistAI.pdf
 
