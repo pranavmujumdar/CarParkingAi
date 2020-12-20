@@ -39,7 +39,7 @@ public class CarAgent : Agent
     public List<GameObject> steeringWheels;
     public List<GameObject> wheelMeshes;
 
-    public float maxTurnDegree = 20f;
+    public float maxTurnDegree = 25f;
     
 
     //force applied to the driving wheels
@@ -111,7 +111,13 @@ public class CarAgent : Agent
         Debug.Log("Hit wall");
         AddReward(-0.1f);
     }
-
+    public void hitAHuman()
+    {
+        // punish the agent
+        Debug.Log("Hit Human");
+        AddReward(-0.2f);
+        EndEpisode();
+    }
     /// <summary>
     /// Reward the agent on parking properly
     /// </summary>
@@ -290,13 +296,13 @@ public class CarAgent : Agent
     {
         var rotation = Random.Range(0, 4);
         var rotationAngle = rotation * 90f;
-        area.transform.Rotate(new Vector3(0f, rotationAngle, 0f));
-
+        /* area.transform.Rotate(new Vector3(0f, rotationAngle, 0f));
+        */
         areaSettings.resetArea();
 
 
         transform.position = GetRandomSpawnPos();
-        transform.Rotate(new Vector3(0f, 0f, 0f));
+        transform.Rotate(new Vector3(0f,rotationAngle, 0f));
 
         m_CarRb.velocity = Vector3.zero;
         

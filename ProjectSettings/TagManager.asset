@@ -9,6 +9,11 @@ TagManager:
   - wall
   - plane
   - spawnPos
+  - stealingpoint
+  - sittingpoint
+  - pickuppoint
+  - waypoint
+  - human
   layers:
   - Default
   - TransparentFX
@@ -19,7 +24,7 @@ TagManager:
   - 
   - 
   - Car
-  - 
+  - Plane
   - 
   - 
   - 

@@ -17,6 +17,11 @@ public class ObstacleDetect : MonoBehaviour
         {
             agent.hitACar();
         }
+        if (collision.gameObject.CompareTag("human"))
+        {
+            Debug.Log("Hit a Human");
+            agent.hitAHuman();
+        }
     }
     /*
     private void OnTriggerEnter(Collider col)
